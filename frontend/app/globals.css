@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #f3f6fb;
+    color: #182235;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: min(900px, 92%);
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.hero {
+    margin-bottom: 30px;
+}
+
+.eyebrow {
+    color: #2563eb;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+h1 {
+    margin: 10px 0;
+    font-size: clamp(30px, 5vw, 44px);
+}
+
+.hero > p:last-child {
+    color: #64748b;
+}
+
+.panel {
+    margin-bottom: 24px;
+    padding: 26px;
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px #0f172a08;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+form {
+    display: grid;
+    gap: 12px;
+}
+
+label {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+button {
+    padding: 13px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: wait;
+}
+
+.student {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 15px 0;
+    border-top: 1px solid #e2e8f0;
+}
+
+.student h3,
+.student p {
+    margin: 4px 0;
+}
+
+.student p,
+.student span,
+footer {
+    color: #64748b;
+    font-size: 14px;
+}
+
+.student span {
+    white-space: nowrap;
+}
+
+footer {
+    padding: 10px 0;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 28px 0;
+    }
+
+    .panel {
+        padding: 18px;
+    }
+}
